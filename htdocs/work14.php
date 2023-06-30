@@ -11,7 +11,12 @@
 
             for($i = 0; $i < $length; $i++) {
                 array_push($num, rand(1, 100));
-                print '<p>'.$num[$i].'</p>';
+                if($num[$i] % 2 == 0){
+                    print '<p>'.$num[$i].'(偶数)</p>';
+                } else {
+                    print '<p>'.$num[$i].'(奇数)</p>';
+                }
+                
             }
 
             
